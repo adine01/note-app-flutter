@@ -1,0 +1,10 @@
+# optional: live reload during local dev (use `air`)
+root = "."
+[build]
+bin = "bin/api"
+cmd = "go build -o bin/api ./cmd/api"
+exclude_dir = ["build", "tmp", "vendor"]
+full_bin = "bin/api"
+include_ext = ["go"]
+[log]
+time = true
